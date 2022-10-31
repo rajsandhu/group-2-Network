@@ -5,7 +5,7 @@ on:
       - '**'        # matches every branch
       - '!master'   # excludes master
 jobs:
-  terraform-deployment:
+  terraform-plan:
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -26,6 +26,9 @@ jobs:
 
       - name: Terraform init
         run: terraform init
+
+      - name: Terraform validate
+        run: terraform validate
 
       - name: Terraform plan
         run: terraform plan
