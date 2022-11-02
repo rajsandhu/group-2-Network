@@ -19,7 +19,7 @@ resource "aws_subnet" "subnet_g_beats" {
     cidr_block = "192.168.11.0/24"
     availability_zone = "eu-central-1"
     tags = {
-        Name = "Beats Subnet Group"
+        Name = "Beats-Subnet-Group"
             }
 }
 resource "aws_subnet" "subnet_g_ls_e" {
@@ -27,7 +27,7 @@ resource "aws_subnet" "subnet_g_ls_e" {
     cidr_block = "192.168.10.0/24"
     availability_zone = "eu-central-1"
     tags = {
-        Name = "LS_E Subnet Group"
+        Name = "LS_E-Subnet-Group"
             }
 }
 resource "aws_internet_gateway" "group2_elk_igw" {
@@ -45,5 +45,3 @@ resource "aws_nat_gateway" "group2_elk_natgw" {
   }
     depends_on = [aws_internet_gateway.group2_elk_igw]
 }
-
-#git push --set-upstream origin vpc
