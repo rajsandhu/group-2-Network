@@ -7,7 +7,7 @@ resource "aws_vpc" "main" {
 resource "aws_subnet" "public" {
     vpc_id = aws_vpc.main.id
     cidr_block = "192.168.1.0/24"
-    availability_zone = "eu-central-1"
+    availability_zone = "eu-central-1a"
     map_public_ip_on_launch = true
     tags = {
         Name = "group2_elk_public_subnet"
@@ -17,7 +17,7 @@ resource "aws_subnet" "public" {
 resource "aws_subnet" "subnet_g_beats" {
     vpc_id = aws_vpc.main.id
     cidr_block = "192.168.11.0/24"
-    availability_zone = "eu-central-1"
+    availability_zone = "eu-central-1a"
     tags = {
         Name = "Beats-Subnet-Group"
             }
@@ -25,7 +25,7 @@ resource "aws_subnet" "subnet_g_beats" {
 resource "aws_subnet" "subnet_g_ls_e" {
     vpc_id = aws_vpc.main.id
     cidr_block = "192.168.10.0/24"
-    availability_zone = "eu-central-1"
+    availability_zone = "eu-central-1a"
     tags = {
         Name = "LS_E-Subnet-Group"
             }
