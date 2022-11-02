@@ -1,3 +1,1 @@
-# group-2-Network
-
-- Implemented Github Actions
+# group-2-Backend
