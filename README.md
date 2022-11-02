@@ -18,8 +18,8 @@ Private subnet for Beats: 192.168.11.0/24
 
 Name of the VPC: group2_vpc
 Name of the public subnet: group2_elk_public_subnet
-Name of the private subnet for Logstash and Elasticsearch: LS_E Subnet Group
-Name of the private subnet for Beats: Beats Subnet Group
+Name of the private subnet for Logstash and Elasticsearch: LS_E-Subnet-Group
+Name of the private subnet for Beats: Beats-Subnet-Group
 
 
 - Implemented Github Actions
